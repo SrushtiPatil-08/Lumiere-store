@@ -48,36 +48,39 @@ Not deployed yet
 ---
 
 ## 📁 Project Structure
+## 📁 Project Structure
+
+```
 Lumiere-store/
 │
 ├── public/
 │   └── vite.svg
 │
 ├── src/
-│   │
+│
 │   ├── assets/              # Images, icons, logos
 │   │   ├── logo.png
 │   │   └── hero.jpg
-│   │
+│
 │   ├── components/         # Reusable UI components
 │   │   ├── Navbar.jsx
 │   │   ├── Footer.jsx
 │   │   └── ProductCard.jsx (optional)
-│   │
+│
 │   ├── pages/              # All route pages
 │   │   ├── Home.jsx
 │   │   ├── About.jsx
 │   │   ├── Products.jsx
 │   │   └── Contact.jsx
-│   │
+│
 │   ├── routes/             # (optional but clean structure)
 │   │   └── AppRoutes.jsx
-│   │
-│   ├── App.jsx            # Main app layout + routes
-│   ├── main.jsx           # Entry point
-│   └── index.css          # Global styles
 │
-├── screenshots/           # README images
+│   ├── App.jsx             # Main app layout + routes
+│   ├── main.jsx            # Entry point
+│   └── index.css           # Global styles
+│
+├── screenshots/            # README images
 │   ├── home.png
 │   ├── products.png
 │   ├── about.png
