@@ -1,16 +1,88 @@
-# React + Vite
+# 🛍️ Lumiere Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React + Vite e-commerce UI project** built with reusable components and React Router for smooth multi-page navigation.  
+It focuses on clean UI design, responsiveness, and a structured frontend architecture.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+Not deployed yet
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Project Screenshots
 
-## Expanding the ESLint configuration
+### 🏠 Home Page
+![Home Page](./screenshots/home.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛒 Products Page
+![Products Page](./screenshots/products.png)
+
+### ℹ️ About Page
+![About Page](./screenshots/about.png)
+
+### 📞 Contact Page
+![Contact Page](./screenshots/contact.png)
+
+---
+
+## 🧰 Tech Stack
+
+- ⚛️ React.js
+- ⚡ Vite
+- 🌐 React Router DOM
+- 🎨 CSS3
+- 📦 Node.js + npm
+
+---
+
+## ✨ Features
+
+- 🧭 Multi-page navigation using React Router
+- 📱 Fully responsive design
+- ♻️ Reusable components (Navbar, Footer)
+- ⚡ Fast performance with Vite
+- 🎨 Modern UI design
+- 🛒 E-commerce layout structure
+
+---
+
+## 📁 Project Structure
+Lumiere-store/
+│
+├── public/
+│   └── vite.svg
+│
+├── src/
+│   │
+│   ├── assets/              # Images, icons, logos
+│   │   ├── logo.png
+│   │   └── hero.jpg
+│   │
+│   ├── components/         # Reusable UI components
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── ProductCard.jsx (optional)
+│   │
+│   ├── pages/              # All route pages
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Products.jsx
+│   │   └── Contact.jsx
+│   │
+│   ├── routes/             # (optional but clean structure)
+│   │   └── AppRoutes.jsx
+│   │
+│   ├── App.jsx            # Main app layout + routes
+│   ├── main.jsx           # Entry point
+│   └── index.css          # Global styles
+│
+├── screenshots/           # README images
+│   ├── home.png
+│   ├── products.png
+│   ├── about.png
+│   └── contact.png
+│
+├── package.json
+├── vite.config.js
+└── README.md
