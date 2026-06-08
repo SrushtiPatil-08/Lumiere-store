@@ -48,7 +48,6 @@ Not deployed yet
 ---
 
 ## 📁 Project Structure
-## 📁 Project Structure
 
 ```
 Lumiere-store/
