@@ -57,7 +57,7 @@ Lumiere-store/
 │
 ├── src/
 │
-│   ├── assets/              # Images, icons, logos
+│   ├── assets/              
 │   │   ├── logo.png
 │   │   └── hero.jpg
 │
@@ -72,14 +72,14 @@ Lumiere-store/
 │   │   ├── Products.jsx
 │   │   └── Contact.jsx
 │
-│   ├── routes/             # (optional but clean structure)
+│   ├── routes/             
 │   │   └── AppRoutes.jsx
 │
 │   ├── App.jsx             # Main app layout + routes
 │   ├── main.jsx            # Entry point
 │   └── index.css           # Global styles
 │
-├── screenshots/            # README images
+├── screenshots/            
 │   ├── home.png
 │   ├── products.png
 │   ├── about.png
