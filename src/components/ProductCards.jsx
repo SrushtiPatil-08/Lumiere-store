@@ -59,23 +59,6 @@ export function ProductCards() {
     fetchProducts();
   }
 
-  async function updateProducts(){
-    const {data} = await supabase.from("productCards").update({title,detail,price,url}).eq("id",editId);
-    setEditId(null)
-    setShowForm(false)
-    fetchProducts()
-  }
-
-  async function editProduct(item_data){
-    setTitle(item_data.title)
-    setDetail(item_data.detail)
-    setPrice(item_data.price)
-    setUrl(item_data.url)
-
-    setEditId(item_data.id)
-    setShowForm(true)
-  }
-
   useEffect(() => {
     fetchProducts();
   },[])
@@ -249,7 +232,7 @@ export function ProductCards() {
           <input placeholder="Detail" onChange={(e) => setDetail(e.target.value)} />
           <input placeholder="Price" onChange={(e) => setPrice(e.target.value)} />
           <input placeholder="Url" onChange={(e) => setUrl(e.target.value)} />
-          <button className="submit-btn" onClick={editId ? updateProducts : addProducts}>{editId ? "Update Product" : "Add Product"}</button>
+          <button className="submit-btn" onClick={addProducts}>Submit</button>
           <button className="close-btn" onClick={() => setShowForm(false)}>Close Form</button>
           <br/>
         </div>) : null
@@ -272,7 +255,6 @@ export function ProductCards() {
                   Buy Now
                 </button><br/>
                 <button className="delete-btn" onClick={() => deleteProducts(item.id)}>Delete</button><br/>
-                <button className="update-btn" onClick={() => editProduct(item)}>Update</button>
               </div>
             </div>
           ))}
