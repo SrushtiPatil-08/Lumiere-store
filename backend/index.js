@@ -20,4 +20,5 @@ app.post("/create",async(req,res) => {
     res.send("added sucessfully")
 })
 
+const PORT = process.env.PORT || 6007;
 app.listen(PORT, () => console.log("Program is running on", PORT));
