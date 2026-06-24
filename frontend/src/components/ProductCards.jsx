@@ -39,7 +39,7 @@ export function ProductCards() {
   async function addProducts(){
     setShowForm(false)
 
-    await fetch("http://localhost:6007/create",{
+    await fetch("https://your-render-url.onrender.com/create",{
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({title,detail,price,url})
@@ -53,7 +53,7 @@ export function ProductCards() {
   }
 
   async function fetchProducts(){
-    const res = await fetch("http://localhost:6007/read")
+    const res = await fetch("https://your-render-url.onrender.com/read")
     const data = await res.json()
     console.log(data);
     setProducts(data);

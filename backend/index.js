@@ -20,4 +20,4 @@ app.post("/create",async(req,res) => {
     res.send("added sucessfully")
 })
 
-app.listen(6007,() => console.log("Program is running"))
+app.listen(PORT, () => console.log("Program is running on", PORT));
