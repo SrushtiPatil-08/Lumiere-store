@@ -14,6 +14,7 @@ export function ProductCards() {
   const [showForm,setShowForm] = useState(false)
   const [products,setProducts] = useState([])
   const [editId,setEditId] = useState(null)
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   // const staticProducts = [
   //    {
