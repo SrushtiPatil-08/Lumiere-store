@@ -40,7 +40,7 @@ export function ProductCards() {
   async function addProducts(){
     setShowForm(false)
 
-    await fetch("https://lumiere-store.onrender.com/create",{
+    await fetch("http://localhost:6001/create",{
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({title,detail,price,url})
@@ -54,7 +54,7 @@ export function ProductCards() {
   }
 
   async function fetchProducts(){
-    const res = await fetch("https://lumiere-store.onrender.com/read")
+    const res = await fetch("http://localhost:6001/read")
     const data = await res.json()
     console.log(data);
     setProducts(data);
